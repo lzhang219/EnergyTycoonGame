@@ -14,7 +14,7 @@ document.cookie = "user=loginuser; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/
 </head>
 <body>
 Please enter your username
-<form action=ChangeCookie(document.getElementById("user"))>
+<form name="myForm" action="/index.html" onsubmit="return ChangeCookie(document.GetElementById("user"))" method="post">
 <input type="text" id="user">
 <input type="submit" value="Submit">
 </form>
