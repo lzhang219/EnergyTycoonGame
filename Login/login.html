@@ -15,7 +15,7 @@ document.cookie = "user=loginuser; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/
 This is the login form for the game:
 
 Please enter your username:
-<form action=ChangeCookie(user)>
-<input type="text" name="user">
+<form action=ChangeCookie(document.getElementById("user"))>
+<input type="text" id="user">
 <input type="submit" value="Submit">
 </form>
