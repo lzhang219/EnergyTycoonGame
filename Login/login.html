@@ -1,0 +1,21 @@
+<?php
+$cookie_name="user";
+$cookie_value="anony"
+setcookie($cookie_name, $cookie_value, time() + (86400 * 7), "/");
+?>
+<script>
+function ChangeCookie(loginuser){
+document.cookie = "user=loginuser; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+}
+<html>
+<head>
+<title>Login<title>
+<head>
+<body>
+This is the login form for the game:
+
+Please enter your username:
+<form action=ChangeCookie(user)>
+<input type="text" name="user>
+<input type="submit" value="Submit">
+</form>
